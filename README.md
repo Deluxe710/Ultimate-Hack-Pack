@@ -12,10 +12,10 @@
   </p>
 
   <p>
-    <img src="https://img.shields.io/badge/FlipperZero-Ready-orange?style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/M5Stack-Supported-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Flipper%20Zero-Ready-orange?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/M5Stack-Active-blue?style=for-the-badge"/>
     <img src="https://img.shields.io/badge/LilyGO-Supported-green?style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/Status-Active-red?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Hak5-Able-red?style=for-the-badge"/>
   </p>
 
   <h3>
@@ -27,19 +27,6 @@
   </h3>
 
 </div>
-
----
-
-## 📑 Table of Contents
-
-- [🙏 Contributors](#-contributors--references)
-- [🔴 Note](#-note)
-- [🔌 BadUSB](#-badusb)
-- [📡 Beacon Flood](#-beacon-flood)
-- [🌐 Evil Portal](#-evil-portal)
-- [📻 IR](#-ir-infrared)
-- [📶 Sub-GHz](#-sub-ghz)
-- [⚙️ Notes](#️-notes)
 
 ---
 
