@@ -1,0 +1,10 @@
+REM Open your link. Replace the youtube link with whatever you want your link to be.
+GUI r
+DELAY 500
+
+REM Type your YouTube channel
+STRING https://www.youtube.com/@Pager_tech
+DELAY 200
+
+REM Press enter
+ENTER
