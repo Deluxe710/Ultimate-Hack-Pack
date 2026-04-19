@@ -1,52 +1,80 @@
-  <!-- README.md -->
+<!-- README.md -->
 
 <div align="center">
 
-  <!-- Banner Image (replace with your own image URL or file path) -->
-  <img src="YOUR_BANNER_IMAGE_HERE.png" alt="Banner" width="100%"/>
+  <!-- Banner -->
+  <img src="https://github.com/Deluxe710/Ultimate-Hack-Pack/blob/main/Ultimate%20Hack%20Pack.png?raw=true" alt="Ultimate Hack Pack Banner" width="100%"/>
 
-  <h1>Ultimate Hack Pack</h1>
+  <h1>🔴 Ultimate Hack Pack 🔴</h1>
 
   <p>
-    A collection of diffrent signal types, files, and codes for the ultimate Flipperzero, m5, lilygo, pentesting extravaganza!!!!!
+    A collection of different signal types, files, and codes for the ultimate Flipper Zero, M5Stack, LilyGO pentesting extravaganza.
   </p>
 
-  <h2>
-    🔗 YouTube: 
+  <p>
+    <img src="https://img.shields.io/badge/FlipperZero-Ready-orange?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/M5Stack-Supported-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/LilyGO-Supported-green?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Status-Active-red?style=for-the-badge"/>
+  </p>
+
+  <h3>
+    🔗 YouTube  
+    <br>
     <a href="https://www.youtube.com/@Pager_tech" target="_blank">
       https://www.youtube.com/@Pager_tech
     </a>
-  </h2>
+  </h3>
 
 </div>
 
 ---
 
+## 📑 Table of Contents
+
+- [🙏 Contributors](#-contributors--references)
+- [🔴 Note](#-note)
+- [🔌 BadUSB](#-badusb)
+- [📡 Beacon Flood](#-beacon-flood)
+- [🌐 Evil Portal](#-evil-portal)
+- [📻 IR](#-ir-infrared)
+- [📶 Sub-GHz](#-sub-ghz)
+- [⚙️ Notes](#️-notes)
+
+---
+
 ## 🙏 Contributors / References
 
-- https://github.com/DRA6N/SubGhz_Cust_Serv  
-- https://github.com/bigbrodude6119/flipper-zero-evil-portal/tree/main  
-- https://github.com/Lucaslhm/Flipper-IRDB/tree/main  
-- https://github.com/UberGuidoZ/Flipper/tree/main  
-# Thank these Contributors and even give them a star for helping this respotory come together!
----
+- <a href="https://github.com/DRA6N/SubGhz_Cust_Serv" target="_blank">SubGhz_Cust_Serv</a>  
+- <a href="https://github.com/bigbrodude6119/flipper-zero-evil-portal/tree/main" target="_blank">Evil Portal</a>  
+- <a href="https://github.com/Lucaslhm/Flipper-IRDB/tree/main" target="_blank">Flipper IR Database</a>  
+- <a href="https://github.com/UberGuidoZ/Flipper/tree/main" target="_blank">UberGuidoZ Flipper Repo</a>  
 
-## 🔴--NOTE--🔴 Some of the badUSB, SubGHZ, and IR signals have not been tested. These Fetures may depend on where you live and what resources are around you.
+⭐ **Thank these contributors and give them a star for helping this repository come together!**
 
 ---
 
-## 🔌 Bad USB
+## 🔴 Note
+
+> ⚠️ Some of the BadUSB, Sub-GHz, and IR signals have not been tested.  
+> These features may depend on where you live and what resources are around you.
+
+---
+
+## 🔌 BadUSB
 
 <div>
 
-### Description
-> Bad USB scripts act as a keyboard on a Device. USE AT YOUR OWN RISK
-### Files / Scripts
-- Chrome_password_stealer.txt: Steals saved passwords off of chrome
-- Hidden_remote_access.txt: Creates a hidden terminal, runs a python scipt so a wifi AP starts so you can veiw the computers screen.
-- Open_link.txt: Opens a link. !!YOU MUST EDIT TO PUT IN YOUR OWN LINK!!
-- Steal_windows_passwords.txt: Steals saved passwords off of your windows computer.
-- Windows_wifi_pass_stealer.txt: Finds saved wifi passwords and dispays them on a document onscreen.
+### 📖 Description
+> BadUSB scripts act as a keyboard on a device.  
+> ⚠️ **USE AT YOUR OWN RISK**
+
+### 📂 Files / Scripts
+- **Chrome_password_stealer.txt** — Steals saved passwords from Chrome  
+- **Hidden_remote_access.txt** — Creates a hidden terminal and runs a Python script to start a Wi-Fi AP so you can view the computer screen  
+- **Open_link.txt** — Opens a link *(YOU MUST EDIT TO PUT YOUR OWN LINK)*  
+- **Steal_windows_passwords.txt** — Steals saved passwords from a Windows computer  
+- **Windows_wifi_pass_stealer.txt** — Finds saved Wi-Fi passwords and displays them on screen  
 
 </div>
 
@@ -56,14 +84,14 @@
 
 <div>
 
-### Description
-> Beacon flood creates fake wifi networks.
+### 📖 Description
+> Beacon flood creates fake Wi-Fi networks.
 
-### Files / Scripts
-- Funny.txt: Creates Wifi Networks that are funny "FBI Van" types.
-- Hydrogliphics.txt: Creates Wifi Networks that are unreadable and random symbols.
-- Iphones.txt: Creates Wifi Networks that display peoples iPhones. (These 'people' are random names and characters)
-- Krusty_krab_convo.txt: Makes a Wifi Netowrks That create a Convo between, Mr Krabbs, SpungeBob, Squidward, and a customer who loves chocolate.
+### 📂 Files / Scripts
+- **Funny.txt** — Creates funny Wi-Fi networks ("FBI Van" style)  
+- **Hieroglyphics.txt** — Creates unreadable/random symbol networks  
+- **Iphones.txt** — Mimics random iPhone device names  
+- **Krusty_krab_convo.txt** — Creates a conversation between Mr. Krabs, SpongeBob, Squidward, and a chocolate-loving customer  
 
 </div>
 
@@ -73,11 +101,13 @@
 
 <div>
 
-### Description
-> Creates a Wifi Network that when connected to, prompts you to enter your info (Email and password) When done so, it saves it to your device and displasy it.
+### 📖 Description
+> Creates a Wi-Fi network that prompts users to enter email/password.  
+> The data is saved and displayed on your device.
 
-### Files / Scripts
-## THEY ALL MAKE A FAKE LOGIN BASED ON THE NAME (10 evil portals)
+### 📂 Files / Scripts
+- **10 Evil Portal templates**  
+- All files generate fake logins based on their names  
 
 </div>
 
@@ -87,13 +117,17 @@
 
 <div>
 
-### Description
-> Used to control devices.
+### 📖 Description
+> Used to control devices via infrared.
 
-### Files / Scripts
-- Projector_killer.ir: Shuts off about 10 prodjectors. (YOUR PRODJECTORS DEPENDS ON YOUR SCHOOL. LOOK FOR YOUR PRODJECTOR BRAND AND MODEL HERE:- https://github.com/Lucaslhm/Flipper-IRDB/tree/main)
-- Promethean_whiteboard.ir: Shuts off the Promethean smart whiteboard.
-- Xbox_controller.ir: IR signals to shut off / Control any xbox.
+### 📂 Files / Scripts
+- **Projector_killer.ir** — Shuts off ~10 projectors  
+  <br>
+  🔎 Find your projector signals here:  
+  <a href="https://github.com/Lucaslhm/Flipper-IRDB/tree/main" target="_blank">Flipper IR Database</a>  
+
+- **Promethean_whiteboard.ir** — Shuts off Promethean smart boards  
+- **Xbox_controller.ir** — Controls/shuts off Xbox systems  
 
 </div>
 
@@ -103,23 +137,30 @@
 
 <div>
 
-### Description
-> Like IR, but WAYYY More powerful. 
+### 📖 Description
+> Like IR, but **WAY more powerful**.
 
-### Files / Scripts
-- Handicap_doors.txt: Opens handicap doors.
-## THE CVS, Lowes, and Walgreens are signals to play the assitence needed in aisles.
+### 📂 Files / Scripts
+- **Handicap_doors.txt** — Opens handicap-accessible doors  
+
+### 🏪 Retail Signals
+- CVS  
+- Lowe’s  
+- Walgreens  
+
+> These trigger assistance alerts in aisles  
+
 </div>
 
 ---
 
 <div align="center">
 
-<h3>⚙️ Notes</h3>
-<p>
-This repository is organized for educational and research purposes.  
-Each folder contains modular resources that can be documented further as needed.
-  I try to update this once in a while adding more useful things.
-</p>
+## ⚙️ Notes
+
+This repository is organized for **educational and research purposes**.  
+Each folder contains modular resources that can be expanded over time.
+
+🛠️ I try to update this occasionally with more useful additions.
 
 </div>
